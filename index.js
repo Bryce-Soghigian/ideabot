@@ -74,8 +74,11 @@ bot.on("message", (msg) => {
               newArray.push(item)
           }
       })
-      let idea = newArray[Math.floor(Math.random() * ideaArray.length)];
-      //Create a new languages string and a new links string with links and languages seperated by commas
+      console.log(newArray[0])
+      let idea = newArray[Math.floor(Math.random()* newArray.length)]
+      
+      // let idea = newArray[Math.floor(Math.random() * ideaArray.length)];
+      // //Create a new languages string and a new links string with links and languages seperated by commas
       let languages = ``;
       idea.languages.map((lang) => {
         languages += `${lang},`;
